@@ -19,8 +19,11 @@ async function connectDB() {
     await connect(process.env.DB_URL);
     console.log("Connected to DB");
     //assign port number
-    const port = process.env.PORT;
-    app.listen(port, () => console.log(`Server on port ${port}`));
+    const PORT = process.env.PORT;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
   } catch (err) {
     console.log("err in DB connection :", err);
   }

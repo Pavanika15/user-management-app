@@ -3,8 +3,8 @@ POST http://localhost:1526/user-api/users
 Content-Type: application/json
 
 {
-  "name": "Pavani",
-  "email": "pavani@gmail.com",
+  "name": "Pavan",
+  "email": "pavan@gmail.com",
   "dateOfBirth": "2006-02-15",
   "mobileNumber": 1234567890
 }
