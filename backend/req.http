@@ -1,0 +1,22 @@
+### create user
+POST http://localhost:1526/user-api/users
+Content-Type: application/json
+
+{
+  "name": "Pavani",
+  "email": "pavani@gmail.com",
+  "dateOfBirth": "2006-02-15",
+  "mobileNumber": 1234567890
+}
+
+### read all users
+GET http://localhost:1526/user-api/users
+
+### read a user by id
+GET http://localhost:1526/user-api/users/69a691476d783cbefc632416
+
+### delete a user
+DELETE  http://localhost:1526/user-api/users/69a691476d783cbefc632416
+
+### Activate user
+PATCH   http://localhost:1526/user-api/users/69a691476d783cbefc632416
