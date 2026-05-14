@@ -30,7 +30,7 @@ app.listen(PORT, () => {
 }
 connectDB();
 // Add error handling middleware
-app.use((err, req, res, next) => {
+app.use((err, req res, next) => {
 
   console.log("err is ",err)
   // Mongoose validation error
